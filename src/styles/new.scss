@@ -1,0 +1,128 @@
+.new{
+  padding: 94px 0 50px;
+  background: #F7F7F7;
+  position: relative;
+  &__title{
+    color: var(--292929, #292929);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 94px 0 50px;
+  }
+  &__card{
+    &-img{
+      width: 100%;
+      bottom: 0;
+    }
+    &-block1{
+      border-radius: 0 0 5px 5px;
+      background: #8CC4EC;
+      position: relative;
+      height: 110px;
+      overflow: hidden;
+    }
+    &-block2{
+      border-radius: 0 0 5px 5px;
+      background: #FF4D6D;
+      position: relative;
+      height: 110px;
+      overflow: hidden;
+    }
+
+    &-desc{
+      color:  #FFF;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      margin: 20px;
+    }
+    &-el{
+      position:absolute;
+      top: 15px;
+      left: 0;
+      right:50px;
+      display: flex;
+      padding: 4px 0 ;
+      background: #8CC4EC;
+      color:#FFF;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+
+    }
+    &-el1{
+      position: absolute;
+      top: 15px;
+      right: 180px;
+      left: 0;
+      padding: 4px 10px;
+      background: #FF4D6D;
+      display: flex;
+      color: #FFF;
+      text-align: center;
+      leading-trim: both;
+      text-edge: cap;
+      font-size: 16px;
+      font-weight: 600;
+      svg path{
+        display: flex;
+        fill: #FF4D6D;
+      }
+    }
+    &-el2{
+      position:absolute;
+      top: 15px;
+      left: 0;
+      right:86px;
+      display: flex;
+      padding:  4px 0 4px 10px ;
+      background: #FF4D6D;
+      color: #FFF;
+      text-align: center;
+      leading-trim: both;
+      text-edge: cap;
+      font-size: 16px;
+      font-weight: 600;
+
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__pagination {
+    width: 100px!important;
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      border-radius: 0;
+      border: 2px solid #E5E5E5;
+      background: #FFFFFF;
+      &-active{
+        background: #E7426A;
+      }
+    }
+    //position: absolute;
+    //right: 0!important;
+    //bottom: 0!important;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

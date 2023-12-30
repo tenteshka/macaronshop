@@ -1,0 +1,103 @@
+.macaron{
+  background: #F7F7F7;
+  padding: 40px 0 60px;
+  position: relative;
+  z-index: -15px;
+  &::before{
+    content: url("../assets/after-1.png");
+    position: absolute;
+    top: 40px;
+    left: 70%;
+    fill: rgba(152, 224, 194, 0.38);
+    filter: blur(50px);
+  }
+  &::after{
+    content: url("../assets/after-2.png");
+    position: absolute;
+    right: 0;
+    bottom: -40px ;
+    border-radius: 224px;
+    filter: blur(50px);
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    position: relative;
+      &::before{
+        content: url("../assets/before-1.png");
+        position: absolute;
+        top: -8px;
+        left: 15%;
+        border-radius: 276.666px;
+        background: rgba(111, 217, 251, 0.60);
+        filter: blur(50px);
+    }
+    &::after{
+      content: url("../assets/before-2.png");
+      position: absolute;
+      right: 59%;
+      border-radius: 246.886px;
+      background: rgba(255, 168, 241, 0.37);
+      filter: blur(50px);
+      bottom: -56px;
+    }
+  }
+  &__left{
+    width: 50%;
+    img{
+      width: 100%;
+      position: relative;
+      z-index: 15;
+    }
+    &-img1{
+      display: flex;
+      position: relative;
+      left: -63px;
+      right: 0;
+      top: 3px;
+    }
+  }
+  &__right{
+    width: 50%;
+    &-text{
+      color:  #292929;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    &-suptitle{
+      color:  #292929;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      &::before,
+      &::after{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        box-sizing: border-box;
+        width: 29px;
+        height: 2px;
+        background: #000;
+        border: solid #000;
+        border-width: 0 20px;
+      }
+    }
+    &-title{
+      color: #292929;
+      text-align: center;
+      font-size: 42px;
+      font-weight: 600;
+      padding: 24px 0 13px;
+    }
+    &-desc{
+      color: #292929;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
+
+

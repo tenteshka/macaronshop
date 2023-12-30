@@ -1,0 +1,11 @@
+.news {
+  padding: 85px 0 40px;
+  background: #F7F7F7;
+  display: flex;
+}
+.news__card {
+  width: calc(50% - 15px);
+  column-gap: 26px;
+}
+
+/*# sourceMappingURL=news.css.map */

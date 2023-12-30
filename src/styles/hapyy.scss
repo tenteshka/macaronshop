@@ -1,0 +1,42 @@
+.happy {
+  padding: 93px 0 46px;
+  background: #F7F7F7;
+  &__title{
+    color: var(--292929, #292929);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+  }
+ &__row{
+   display: flex;
+   align-items: center;
+   position:relative;
+   span{
+     display: flex;
+     position: absolute;
+     left:110px;
+     top: -5px;
+   }
+ }
+  &__card{
+    padding: 46px 0 108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-text{
+      color: var(--292929, #292929);
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 0 30px;
+    }
+    &-desc{
+      color: var(--292929, #292929);
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 0 30px ;
+    }
+
+  }
+}

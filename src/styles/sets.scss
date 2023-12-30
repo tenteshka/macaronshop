@@ -1,0 +1,85 @@
+.sets{
+  padding: 108px 0;
+  background:  #F7F7F7;
+  &__title{
+    color: var(--292929, #292929);
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding: 42px;
+  }
+  &__cards{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    gap: 35px;
+  }
+  button{
+    position: relative;
+    display: flex;
+    border-radius: 3px;
+    border: 1px solid #4E9DD3;
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+    padding: 18px 49px;
+    cursor: pointer;
+    margin: 0 450px;
+  }
+  &__card{
+    width: calc(33.33333% - 30px);
+    border-radius: 5px;
+    border: 1px solid #EDEDF0;
+    background: #FFF;
+    &-line {
+      padding: 20px 22px;
+      border-bottom: 1px solid #EDEDF0;
+    }
+    &-bottom {
+      display: flex;
+      p:first-child {
+          color: #E7426A;
+          font-size: 18px;
+          font-weight: 600;
+        padding: 14px 72px 10px 21px;
+        border-right: 1px solid #EDEDF0;
+      }
+      .cart {
+        padding: 13px 0 18px 23px;
+        display: flex;
+        align-items: center;
+        column-gap: 11px;
+        color: rgba(0, 0, 0, 0.88);
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+
+    &__basket{
+      display: flex;
+      span{
+        color: rgba(0, 0, 0, 0.88);
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+  &__img{
+    display: flex;
+    text-align: center;
+  }
+  &__text{
+    color: var(--292929, #292929);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 21px 0 14px;
+  }
+  &-line{
+   display: flex;
+  }
+  &__desc{
+    color: var(--292929, #292929);
+    font-weight: 400;
+  }
+
+}
